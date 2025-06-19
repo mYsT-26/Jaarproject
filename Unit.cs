@@ -6,15 +6,15 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
 
-    public string unitName;
-    public int unitLevel;
+    public string unitName; // naam van de character
+    public int unitLevel; // naam van de character
 
-    public float damage;
+    public float damage; // hoeveel vaste damage dat die heeft
 
-    public int maxHP;
-    public float currentHP;
-    public int criticalChance;
-    public bool isCrit(int crit) 
+    public int maxHP; // Het hoogste aantal hit points dat die character can hebben
+    public float currentHP; // Hoeveel hit points dat die momenteel heeft
+    public int criticalChance; // De kans van een "critical hit" te doen
+    public bool isCrit(int crit) // checken als het een critical hit is
     {
         int rand = Random.Range(0, 99);
 
@@ -29,7 +29,7 @@ public class Unit : MonoBehaviour
 
         //if (isCrit(crit))
         //{
-        //    dmg = dmg * 1.50F;
+        //    dmg = dmg * 1.50F; crit multiplier verplaatst naar battlesystem
         //}
 
         currentHP -= dmg;
