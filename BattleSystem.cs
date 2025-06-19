@@ -58,7 +58,7 @@ public class BattleSystem : MonoBehaviour
     {
         bool isCrit = playerUnit.isCrit(playerUnit.criticalChance);
         if (isCrit)
-            p1Damage = playerUnit.damage * 48.92F;
+            p1Damage = playerUnit.damage * 1.50F;
         else
             p1Damage = playerUnit.damage;
 
